@@ -46,13 +46,13 @@ body {
 .header-nav nav ul {
     display: flex;
     list-style: none;
-    padding: 0;
     margin: 0;
+    font-size: 1rem;
 }
 
 .header-nav nav li {
     margin-right: 20px;
-    padding: 15px;
+    padding: 1rem;
     /* Add other styles as needed */
 }
 
@@ -67,15 +67,49 @@ body {
     background-color: rgba(149, 149, 149, 0.5);
 }
 
-/** Biography Grid Container */
+/** Biography Flex Container */
 
 .biography-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        'bio-image bio-text'
-        'bio-image bio-text';
-    grid-gap: 10px;
-    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: flex-start;
+    background-color: var(--primary);
+    padding: 20px;
+    max-width: 87%;
+    margin: 20px auto;
+}
+
+
+.profile-picture {
+    flex: 0 0 43%;
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio-text h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bio-text h3 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.bio-text p {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.4em;
 }
