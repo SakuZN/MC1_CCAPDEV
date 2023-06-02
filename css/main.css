@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Tsukimi+Rounded:wght@700&display=swap');
+
+:root {
+    --primary: #d9d9d9;
+    --font-family: 'Cairo', sans-serif;
+    --font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**Styling Header Section */
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary);
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+    border-bottom: solid 1px rgb(93, 93, 93);
+}
+
+.header-nav h1 {
+    font-family: 'Tsukimi Rounded', sans-serif;
+    font-size: 1.4rem;
+    margin-left: 15px;
+}
+
+.header-nav nav {
+    display: flex;
+    /* Add other styles as needed */
+    align-items: center;
+
+    text-align: center;
+}
+
+.header-nav nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav nav li {
+    margin-right: 20px;
+    padding: 15px;
+    /* Add other styles as needed */
+}
+
+.header-nav nav li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.header-nav nav li:hover {
+    cursor: pointer;
+    background-color: rgba(149, 149, 149, 0.5);
+}
+
+/** Biography Grid Container */
+
+.biography-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'bio-image bio-text'
+        'bio-image bio-text';
+    grid-gap: 10px;
+    padding: 10px;
+}
