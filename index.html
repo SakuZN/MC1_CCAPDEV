@@ -2,26 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Portfolio</title>
 	<link rel="stylesheet" href="css/main.css">
+	
+	<style>
+		.sprite{
+			background-image: url("images/sprite/spritesheet.png");
+			background-size: 178px 72px;
+			background-repeat: no-repeat;
+		}
+		
+		.fb{
+			width: 37px;
+			height: 36px;
+			background-position: 0 0;
+		}
+		.fb:hover{
+			background-position: 0 -36px;
+		}
+		
+		.github{
+			width: 36px;
+			height: 36px;
+			background-position: -37px 0;
+		}
+		.github:hover{
+			background-position: -37px -36px;
+		}
+		
+		.linkedin{
+			width: 36px;
+			height: 36px;
+			background-position: -72px 0;
+		}
+		.linkedin:hover{
+			background-position: -72px -36px;
+		}
+		
+		.twitter{
+			width: 34px;
+			height: 36px;
+			background-position: -108px 0;
+		}
+		.twitter:hover{
+			background-position: -108px -36px;
+		}
+		
+		.youtube{
+			width: 36px;
+			height: 36px;
+			background-position: -142px 0;
+		}
+		.youtube:hover{
+			background-position: -142px -36px;
+		}
+		
+	</style>
 </head>
 <body>
 
 	<!-- Header -->
-	<div class="header-nav">
+	<div class="header-nav" id="home">
 		<h1>Portfolio.</h1>
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#about_me">About Me</a></li>
+				<li><a href="#contact">Contact</a></li>
 				<li><a href="#">Projects</a></li>
 			</ul>
 		</nav>
 	</div>
 	
 	<!-- Biography Content -->
-	<div class="biography-container">
+	<div class="biography-container" id="about_me">
 		<!-- Profile Picture -->
 		<div class="profile-picture">
 			<img src="images/profilepicture.jpg" alt="Profile Picture">
@@ -29,18 +83,62 @@
 		
 		<!-- Biography Text -->
 		<div class="bio-text">
-			<h1>I'm Zach</h1>
+			<h1>I'm Juan</h1>
 			<h3>BS Computer Science Graduate | De La Salle University</h3>
 			
 			<p>
-				Far away, in the depths of a dense forest, a small stream flowed gently through the trees.
-				The sun shone down, dappling the forest floor with light and shadow. Birds sang sweetly in the branches above,
-				while a family of deer grazed nearby. In this peaceful scene, all was calm and serene.
+				Throughout my academic journey, I have developed a solid foundation in computer science principles,
+			programming languages, and software development methodologies. With a passion for problem-solving and a keen
+			eye for detail, I enjoy exploring innovative solutions to complex challenges.<br>
+			As a dedicated learner, I am always eager to stay up-to-date with the latest industry trends and merging technologies.
+			I believe that continuous learning is crucial in this field, and I actively seek
+			opportunities to expand my knowledge and enhance my skill set.
 			</p>
+			
+			<ul>
+				<li><strong>Full Name:</strong> Juan Dela Cruz</li>
+				<li><strong>Phone:</strong> (639) 123-456</li>
+				<li><strong>Email:</strong> juandelacruz@email.com</li>
+			</ul>
+			
+			<div class="list-title">Skills</div>
+			<ul>
+				<li>HTML / CSS / JavaScript / NodeJs</li>
+				<li>Express, Handlebars</li>
+				<li>MySQL, MongoDB</li>
+				<li>C, C++, Java, Python</li>
+			</ul>
+			
+			<div class="social-media">
+				Find me on:
+			</div>
+			<div class="links">
+				<div class="sprite fb"></div>
+				<div class="sprite github"></div>
+				<div class="sprite linkedin"></div>
+				<div class="sprite twitter"></div>
+				<div class="sprite youtube"></div>
+			</div>
 		</div>
+		
 	</div>
 	
-	
+	<!-- Contact Form -->
+	<div class="contact-container" id="contact">
+		<div>
+			<h1>Get in Touch</h1>
+		</div>
+		<div>
+			<textarea name="message" rows="10" cols="30" placeholder="Message"></textarea>
+		</div>
+		<div>
+			<div class="submit">Send</div>
+		</div>
+	</div>
+
+
+
+
 
 </body>
 </html>
