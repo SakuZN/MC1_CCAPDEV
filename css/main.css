@@ -3,6 +3,7 @@
 :root {
     --primary: #d9d9d9;
     --font-family: 'Cairo', sans-serif;
+    --font-title: 'Tsukimi Rounded', sans-serif;
     --font-size: 16px;
 }
 
@@ -31,16 +32,14 @@ body {
 }
 
 .header-nav h1 {
-    font-family: 'Tsukimi Rounded', sans-serif;
+    font-family: var(--font-title);
     font-size: 1.4rem;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .header-nav nav {
     display: flex;
-    /* Add other styles as needed */
     align-items: center;
-
     text-align: center;
 }
 
@@ -54,7 +53,6 @@ body {
 .header-nav nav li {
     margin-right: 20px;
     padding: 1rem;
-    /* Add other styles as needed */
 }
 
 .header-nav nav li a {
@@ -77,37 +75,36 @@ body {
     background-color: var(--primary);
     padding: 20px;
     max-width: 90%;
-    max-height: fit-content;
     margin: 30px auto;
 }
 
 
 .profile-picture {
-    align-items: center;
-    flex: 0 0 43%;
+    align-self: flex-start;
+    flex-basis: 43%;
     margin-right: 20px;
+    object-fit: fill;
+    overflow: hidden;
 }
 
 .profile-picture img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 .bio-text {
-    flex: 1;
+    flex-basis: 55%;
 }
 
 .bio-text h1 {
     font-size: 1.75rem;
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: 0;
 }
 .bio-text h3 {
     font-size: 1.25rem;
     font-weight: normal;
     margin-top: 0;
+    line-height: 1rem;
 }
 
 .bio-text p {
@@ -141,6 +138,7 @@ body {
     font-size: 1.25rem;
     line-height: 1.4em;
     font-weight: lighter;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -175,7 +173,7 @@ body {
     width: 98%;
     height: 8rem;
     resize: vertical;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-container .submit {
